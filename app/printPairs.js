@@ -7,7 +7,7 @@ function printColorPairs() {
   for (let i = 0; i < MajorColorNames.length; i++) {
     for (let j = 0; j < MinorColorNames.length; j++) {
       let pairNumber = i * MinorColorNames.length + (j + 1);
-      colorCoding += `Pair Number: ${pairNumber}, Colors: ${MajorColorNames[i]}, ${MinorColorNames[j]}\n`;
+      colorCoding += `Pair Number: ${pairNumber}, MajorColor: ${MajorColorNames[i]}, MinorColor: ${MinorColorNames[j]}\n`;
     }
   }
 
