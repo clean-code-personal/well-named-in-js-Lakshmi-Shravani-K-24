@@ -1,6 +1,7 @@
 const { MajorColorNames, MinorColorNames } = require('./colorCoder');
 
 function printColorPairs() {
+  console.log("Color Code and Pairs Manual");
   let colorCoding = '';
 
   for (let i = 0; i < MajorColorNames.length; i++) {
