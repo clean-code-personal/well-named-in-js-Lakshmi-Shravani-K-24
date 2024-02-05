@@ -15,7 +15,6 @@ function getColorFromPairNumber(pairNumber)
 {
 	let minorSize = MajorColorNames.length;
 	let majorSize = MinorColorNames.length;
-	
 	if (pairNumber < 1 || pairNumber > minorSize * majorSize)
  	{
  		throw `Argument PairNumber:${pairNumber} is outside the allowed range` 
@@ -39,7 +38,6 @@ function getPairNumberFromColor(pair)
                     break;
                 }
             }
-
         let minorIndex = -1;
             for (let i = 0; i < MinorColorNames.length; i++)
             {
@@ -49,15 +47,12 @@ function getPairNumberFromColor(pair)
                     break;
                 }
             }
-    
-        if (majorIndex == -1 || minorIndex == -1)
+            if (majorIndex == -1 || minorIndex == -1)
             {
                 throw `Unknown Colors:${pair.toString()}`;
             }
-
         return (majorIndex * MinorColorNames.length) + (minorIndex + 1);
 	 }
-
 	module.exports={
   MajorColorNames,
   MinorColorNames,
