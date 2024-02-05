@@ -2,7 +2,6 @@ const {
   getColorFromPairNumber,
   getPairNumberFromColor,
 } = require("./colorCoder");
-
 const { printColorPairs, ColorPair } = require("./printPairs");
 function test() {
   pairNumber = 4;
@@ -33,6 +32,5 @@ function test() {
   console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
   console.assert(pairNumber == 6);
 }
-
 test();
 console.log(printColorPairs());
