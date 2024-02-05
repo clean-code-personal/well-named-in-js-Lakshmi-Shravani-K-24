@@ -1,4 +1,4 @@
-const { getColorFromPairNumber, getPairNumberFromColor } = require('./colorCoder');
+const { getColorFromPairNumber, getPairNumberFromColor, ColorPair } = require('./colorCoder');
 const { printColorPairs } = require('./printPairs');
 
 function test(){
