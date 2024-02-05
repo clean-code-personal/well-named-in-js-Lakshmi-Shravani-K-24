@@ -40,3 +40,8 @@ function test(){
 }
 test();
 console.log(printColorPairs());
+module.export={
+	MajorColorNames,
+  MinorColorNames,
+  ColorPair
+}
