@@ -25,7 +25,7 @@ function test(){
             console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
 			console.assert(testPair1.majorColor == "VIOLET");
 			console.assert(testPair1.minorColor == "GREEN");
-	let testPair2 = new ColorPair();
+	    let testPair2 = new ColorPair();
 			testPair2.majorColor="YELLOW";
 			testPair2. minorColor ="GREEN";
             pairNumber =getPairNumberFromColor(testPair2);
@@ -42,6 +42,6 @@ test();
 console.log(printColorPairs());
 module.exports={
 	MajorColorNames,
-  MinorColorNames,
-  ColorPair
+        MinorColorNames,
+        ColorPair
 }
