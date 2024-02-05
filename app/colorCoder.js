@@ -1,4 +1,4 @@
-const { MajorColorNames, MinorColorName, ColorPair } = require('./main');
+const { MajorColorNames, MinorColorNames, ColorPair } = require('./main');
 ColorPair.prototype.toString=function(){
 	return `MajorColor:${this.majorColor},MinorColr:${this.minorColor}`;
 }
