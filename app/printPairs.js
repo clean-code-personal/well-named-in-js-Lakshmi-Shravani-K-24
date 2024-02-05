@@ -1,4 +1,4 @@
-const { MajorColorNames, MinorColorNames } = require('./colorCoder');
+const { MajorColorNames, MinorColorNames } = require('./main');
 function printColorPairs() {
   console.log("Color Code and Pairs Manual");
   let colorCoding = '';
