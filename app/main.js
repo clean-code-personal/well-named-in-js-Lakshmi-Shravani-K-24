@@ -1,3 +1,5 @@
+const { printColorPairs } = require('./printPairs');
+const { getColorFromPairNumber,getPairNumberFromColor  } = require('./colorCoder');
 const MajorColorNames = [
     "WHITE", "RED", "BLACK", "YELLOW", "VIOLET"
 ];
@@ -8,7 +10,6 @@ function ColorPair(){
            this.majorColor;
            this.minorColor;
 }
-const { printColorPairs } = require('./printPairs');
 function test(){
 			pairNumber = 4;
             let testPair1 = getColorFromPairNumber(pairNumber);
