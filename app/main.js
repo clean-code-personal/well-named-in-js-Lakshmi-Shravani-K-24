@@ -40,7 +40,7 @@ function test(){
 }
 test();
 console.log(printColorPairs());
-module.export={
+module.exports={
 	MajorColorNames,
   MinorColorNames,
   ColorPair
