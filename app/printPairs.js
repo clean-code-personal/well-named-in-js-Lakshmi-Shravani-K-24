@@ -11,5 +11,5 @@ function printColorPairs() {
   return colorCoding;
 }
 module.exports = {
-  printColorPairs,
+  printColorPairs
 };
