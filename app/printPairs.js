@@ -8,7 +8,7 @@ function ColorPair() {
 ColorPair.prototype.toString = function () {
   return `MajorColor:${this.majorColor},MinorColor:${this.minorColor}`;
 };
-function getAllColorPairs() {
+function printColorPairs() {
   let colorCoding = "";
   for (let i = 0; i < MajorColorNames.length; i++) {
     for (let j = 0; j < MinorColorNames.length; j++) {
@@ -19,7 +19,7 @@ function getAllColorPairs() {
   return colorCoding;
 }
 module.exports = {
-  getAllColorPairs,
+  printColorPairs,
   MajorColorNames,
   MinorColorNames,
   maxSizeOfPairNumber,
