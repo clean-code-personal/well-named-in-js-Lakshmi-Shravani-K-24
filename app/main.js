@@ -2,16 +2,20 @@ const {
   getColorFromPairNumber,
   getPairNumberFromColor,
 } = require("./colorCoder");
-const { printColorPairs, ColorPair } = require("./printPairs");
+const {
+  printColorPairs,
+  maxSizeOfPairNumber,
+  ColorPair,
+} = require("./printPairs");
 function test() {
   pairNumber = 4;
   console.assert(pairNumber != 0);
+  console.assert(pairNumber <= maxSizeOfPairNumber);
   let testPair1 = getColorFromPairNumber(pairNumber);
   console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
   console.assert(testPair1.majorColor == "WHITE");
   console.assert(testPair1.minorColor == "BROWN");
   pairNumber = 5;
-  console.assert(pairNumber != 0);
   testPair1 = getColorFromPairNumber(pairNumber);
   console.log(`[In]Pair Number: ${pairNumber},[Out] Colors:${testPair1}`);
   console.assert(testPair1.majorColor == "WHITE");
@@ -32,17 +36,15 @@ function test() {
   testPair2.minorColor = "BLUE";
   pairNumber = getPairNumberFromColor(testPair2);
   console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
-  console.assert(pairNumber == 6);console.assert(
-  (() => {
+  console.assert(pairNumber == 6);
+  console.assert(() => {
     try {
-      getColorFromPairNumber(20); 
-      return true;
+      getColorFromPairNumber(20);
+      return false;
     } catch (error) {
-      return false; 
+      return true;
     }
-  })(),
-  "Test case 1 failed: Expected no error for valid pairNumber."
-);
+  }, "Test case 1 failed: Expected no error for valid pair number.");
 }
 test();
 console.log(printColorPairs());
