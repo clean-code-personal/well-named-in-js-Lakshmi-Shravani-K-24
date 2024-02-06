@@ -1,4 +1,4 @@
-const { MajorColorNames, MinorColorNames, ColorPair } = require("./getAllPairs");
+const { MajorColorNames, MinorColorNames, ColorPair } = require("./printPairs");
 function getColorFromPairNumber(pairNumber) {
   let minorSize = MajorColorNames.length;
   let majorSize = MinorColorNames.length;
