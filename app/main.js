@@ -32,15 +32,17 @@ function test() {
   testPair2.minorColor = "BLUE";
   pairNumber = getPairNumberFromColor(testPair2);
   console.log(`[In]Colors: ${testPair2}, [Out] PairNumber: ${pairNumber}`);
-  console.assert(pairNumber == 6);
-  console.assert(() => {
+  console.assert(pairNumber == 6);console.assert(
+  (() => {
     try {
-      getColorFromPairNumber(20);
-      return false;
-    } catch (error) {
+      getColorFromPairNumber(20); 
       return true;
+    } catch (error) {
+      return false; 
     }
-  }, "Test case 1 failed: Expected no error for valid pair number.");
+  })(),
+  "Test case 1 failed: Expected no error for valid pairNumber."
+);
 }
 test();
 console.log(printColorPairs());
