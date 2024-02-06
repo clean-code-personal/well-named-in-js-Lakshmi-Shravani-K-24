@@ -1,6 +1,6 @@
 const MajorColorNames = ["WHITE", "RED", "BLACK", "YELLOW", "VIOLET"];
 const MinorColorNames = ["BLUE", "ORANGE", "GREEN", "BROWN", "SLATE"];
-
+const maxSizeOfPairNumber = MajorColorNames.length * MinorColorNames.length;
 function ColorPair() {
   this.majorColor;
   this.minorColor;
@@ -23,5 +23,6 @@ module.exports = {
   printColorPairs,
   MajorColorNames,
   MinorColorNames,
+  maxSizeOfPairNumber,
   ColorPair,
 };
