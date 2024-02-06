@@ -47,4 +47,3 @@ function test() {
   }, "Test case 1 failed: Expected no error for valid pair number.");
 }
 test();
-console.log(printColorPairs());
