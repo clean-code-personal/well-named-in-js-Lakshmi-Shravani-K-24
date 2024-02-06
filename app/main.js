@@ -40,9 +40,9 @@ function test() {
   console.assert(() => {
     try {
       getColorFromPairNumber(20);
-      return false;
-    } catch (error) {
       return true;
+    } catch (error) {
+      return false;
     }
   }, "Test case 1 failed: Expected no error for valid pair number.");
 }
