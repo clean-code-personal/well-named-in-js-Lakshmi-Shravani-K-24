@@ -2,10 +2,8 @@ const {
   getColorFromPairNumber,
   getPairNumberFromColor,
 } = require("./colorCoder");
-const {
-  maxSizeOfPairNumber,
-  ColorPair,
-} = require("./printPairs");
+const { maxSizeOfPairNumber, ColorPair } = require("./printPairs");
+const { printTest } = require("./printAndTestPairs");
 function test() {
   pairNumber = 4;
   console.assert(pairNumber != 0);
