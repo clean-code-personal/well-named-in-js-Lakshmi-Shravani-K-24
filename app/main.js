@@ -47,3 +47,4 @@ function test() {
 }
 test();
 console.log(printColorPairs());
+printTest();
