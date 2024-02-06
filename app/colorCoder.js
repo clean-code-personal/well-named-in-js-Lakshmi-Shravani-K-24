@@ -2,7 +2,6 @@ const { MajorColorNames, MinorColorNames, ColorPair } = require("./printPairs");
 function getColorFromPairNumber(pairNumber) {
   let minorSize = MajorColorNames.length;
   let majorSize = MinorColorNames.length;
-  console.assert(pairNumber <= MajorColorNames.length * MinorColorNames.length);
   if (pairNumber < 1 || pairNumber > minorSize * majorSize) {
     throw `Argument PairNumber:${pairNumber} is outside the allowed range`;
   }
