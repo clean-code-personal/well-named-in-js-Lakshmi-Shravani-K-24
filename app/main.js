@@ -3,10 +3,10 @@ const {
   getPairNumberFromColor,
 } = require("./colorCoder");
 const {
-  printColorPairs,
+  getAllColorPairs,
   maxSizeOfPairNumber,
   ColorPair,
-} = require("./printPairs");
+} = require("./getAllPairs");
 function test() {
   pairNumber = 4;
   console.assert(pairNumber != 0);
