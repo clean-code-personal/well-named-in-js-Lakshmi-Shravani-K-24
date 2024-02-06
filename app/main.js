@@ -3,7 +3,6 @@ const {
   getPairNumberFromColor,
 } = require("./colorCoder");
 const {
-  printColorPairs,
   maxSizeOfPairNumber,
   ColorPair,
 } = require("./printPairs");
