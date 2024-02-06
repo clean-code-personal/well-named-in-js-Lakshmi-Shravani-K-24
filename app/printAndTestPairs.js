@@ -6,8 +6,8 @@ const {
   ColorPair,
 } = require("./printPairs");
 function printTest(){
-  console.log("ColorCode and their Color Pairs");
-  console.log(printColourPairs());
+  console.log("ColorCode and Color Pairs Manual");
+  console.log(printColorPairs());
 const pairs = printColorPairs().split("\n").filter(Boolean);
 console.assert(
   pairs.length === maxSizeOfPairNumber,
