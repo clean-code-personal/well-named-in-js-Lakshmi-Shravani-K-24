@@ -5,8 +5,7 @@ const {
   maxSizeOfPairNumber,
   ColorPair,
 } = require("./printPairs");
-console.log("Color Code and Pairs Manual");
-console.log(printColorPairs());
+function printTest(){
 const pairs = printColorPairs().split("\n").filter(Boolean);
 console.assert(
   pairs.length === maxSizeOfPairNumber,
@@ -45,3 +44,4 @@ colorPair.majorColor = "BLACK";
 colorPair.minorColor = "BLUE";
 console.assert(colorPair.majorColor === "BLACK", "Major color should be BLACK");
 console.assert(colorPair.minorColor === "BLUE", "Minor color should be BLUE");
+}
