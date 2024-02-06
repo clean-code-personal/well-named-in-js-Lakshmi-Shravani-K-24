@@ -9,6 +9,7 @@ ColorPair.prototype.toString = function () {
   return `MajorColor:${this.majorColor},MinorColor:${this.minorColor}`;
 };
 function printColorPairs() {
+ console.log("Color Code and Pairs Manual");
   let colorCoding = "";
   for (let i = 0; i < MajorColorNames.length; i++) {
     for (let j = 0; j < MinorColorNames.length; j++) {
