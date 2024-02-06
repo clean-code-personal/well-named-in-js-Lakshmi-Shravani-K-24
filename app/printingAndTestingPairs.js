@@ -1,13 +1,13 @@
 const {
   MajorColorNames,
   MinorColorNames,
-  printColorPairs,
+  getAllColorPairs,
   maxSizeOfPairNumber,
   ColorPair,
-} = require("./printPairs");
+} = require("./getAllPairs");
 console.log("Color Code and Pairs Manual");
-console.log(printColorPairs());
-const pairs = printColorPairs().split("\n").filter(Boolean);
+console.log(getAllColorPairs());
+const pairs = getAllColorPairs().split("\n").filter(Boolean);
 console.assert(
   pairs.length === maxSizeOfPairNumber,
   `Expected ${maxSizeOfPairNumber} pairs, but got ${pairs.length}`
